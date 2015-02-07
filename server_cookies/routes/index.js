@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
 	//check if user has cookie
 	//if no render home page with form
 	console.log("Cookies: ", req.cookies)
-	if (req.cookies.favoritecolor){
-  res.render('index', { title: 'Express', color: req.cookies.favoritecolor});
+	if (req.cookies.favoritecolor){heroku 
+  		res.render('index', { title: 'Express', color: req.cookies.favoritecolor});
 	}
   	else { 
   		res.render('index', { title: 'Express'});

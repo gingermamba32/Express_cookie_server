@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  h1 Here is your form
+  h1 CSS COLOR GENERATOR
+  h3 Use this site to test CSS colors.
+  h3 In this form enter a Hex color      
   form(action='/', method ='post')
     .form-group
-        label Write your favorite color   
-        input.form-control(type='text', value=color, name='colors')
-      button.btn.btn-default(type='submit') Submit
+        label    
+        input.form-control(type='text', value=color, name='colors', placeholder='Enter Color')
+      button.btn.btn-default(type='submit') Change Background-Color
